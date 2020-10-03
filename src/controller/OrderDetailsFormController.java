@@ -156,7 +156,6 @@ public class OrderDetailsFormController {
             int qty = item.getQty();
             System.out.println(qty);
             addToOrderDetail(orderId,itemCode,qty,item.getUnitPrice());
-            orderBO.saveNewQty(qty,itemCode);
         }
         calculateOrderTotal();
         loadAllItems();

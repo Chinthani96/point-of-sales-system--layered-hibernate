@@ -11,6 +11,5 @@ public interface OrderBO extends SuperBO {
     void saveOrder(String id, Date date, CustomerTM customer);
     void saveOrderDetail(String orderId, String itemCode, int qty, double unitPrice);
     String generateNewOrderId();
-    boolean saveNewQty(int orderQty, String code);
     List<SearchOrderTM> getOrderDetails();
 }

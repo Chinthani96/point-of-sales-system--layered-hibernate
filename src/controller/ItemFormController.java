@@ -44,8 +44,8 @@ public class ItemFormController {
         //mapping columns
         tblItemDetails.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("itemId"));
         tblItemDetails.getColumns().get(1).setCellValueFactory(new PropertyValueFactory<>("description"));
-        tblItemDetails.getColumns().get(2).setCellValueFactory(new PropertyValueFactory<>("unitPrice"));
-        tblItemDetails.getColumns().get(3).setCellValueFactory(new PropertyValueFactory<>("qtyOnHand"));
+        tblItemDetails.getColumns().get(3).setCellValueFactory(new PropertyValueFactory<>("unitPrice"));
+        tblItemDetails.getColumns().get(2).setCellValueFactory(new PropertyValueFactory<>("qtyOnHand"));
 
         tblItemDetails.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<ItemTM>() {
             @Override
