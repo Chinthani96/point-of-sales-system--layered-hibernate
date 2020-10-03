@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="436.0" prefWidth="599.0"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="183.0" layoutY="7.0" prefHeight="39.0" prefWidth="219.0" text="Item Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemID" editable="false" layoutX="32.0" layoutY="46.0" prefHeight="27.0" prefWidth="462.0" promptText="Item ID" />
+      <TextField fx:id="txtDescription" layoutX="32.0" layoutY="80.0" prefHeight="27.0" prefWidth="462.0" promptText="Description" />
+      <TextField fx:id="txtQtyOnHand" layoutX="32.0" layoutY="115.0" prefHeight="27.0" prefWidth="462.0" promptText="Quantity On hand" />
+      <TextField fx:id="txtUnitPrice" layoutX="32.0" layoutY="150.0" prefHeight="27.0" prefWidth="462.0" promptText="Unit Price" />
+      <TableView fx:id="tblItemDetails" layoutX="32.0" layoutY="218.0" prefHeight="206.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="tblClmnItemID" prefWidth="126.0" text="Item ID" />
+          <TableColumn fx:id="tblClmnDescription" prefWidth="145.0" text="Description" />
+            <TableColumn fx:id="tblClmnQtyOnHand" prefWidth="122.0" text="Quantity on Hand" />
+            <TableColumn fx:id="tblClmnUnitPrice" prefWidth="145.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAddItem" layoutX="503.0" layoutY="46.0" mnemonicParsing="false" onAction="#btnAdd_OnAction" text="Add Item" />
+      <Button fx:id="btnSave" layoutX="371.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnSave_OnAction" text="Save" />
+      <Button fx:id="btnDelete" layoutX="426.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnDelete_OnAction" text="Delete" />
+      <Button fx:id="btnBack" layoutX="32.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnBack_OnAction" text="Back" />
+   </children>
+</AnchorPane>
