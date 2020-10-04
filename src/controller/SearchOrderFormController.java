@@ -38,6 +38,7 @@ public class SearchOrderFormController {
         tblOrders.getColumns().get(2).setCellValueFactory(new PropertyValueFactory<>("customerId"));
         tblOrders.getColumns().get(3).setCellValueFactory(new PropertyValueFactory<>("customerName"));
         tblOrders.getColumns().get(4).setCellValueFactory(new PropertyValueFactory<>("total"));
+        //TODO:resolve errors in the getOrderDetails method in QueryDAO
         loadTable();
 
         txtSearch.textProperty().addListener(new ChangeListener<String>() {
